@@ -24,14 +24,14 @@ h1 {
  /*header의 자손인 h1 태그에 적용*/
  header h1 {
     color: wheat;
-    width: 40%;
+    width: 30%;
     float: left;
  }
  /* header의 자식인 nav 태그에 적용 */
 
 header > nav {
     /* background-color: rgb(31, 147, 255); */
-    width: 50%;
+    width: 70%;
     float: right;
 }
 nav ul {
@@ -96,9 +96,6 @@ ul {
     line-height: 30px;
 }
 
-article {
-
-}
 
 footer {
     width: 80%;
@@ -109,3 +106,4 @@ footer {
     color: white;
     padding: 10px;
 }
+
