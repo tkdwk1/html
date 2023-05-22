@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자2 - 김태환</title>
+
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin: 10px;
+            width: 120px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            padding: 5px 20px;
+        }
+        a[href *= "w3"] { /* (*)기호는 전체 */
+            background-color: yellow;
+        }
+        a[target="_blank"] {
+            background: url(images/newwindow.png) no-repeat center right;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 표준안 사이트</h1>
+    <p>아래 링크중 노란색 배경의 링크는 w3c 사이트로 연결됩니다.</p>
+        <ul>
+            <li><a href="http://www.w3c.org/TR/html" target="_blank">HTML</a></li>
+            <li><a href="https://www.w3.org/TR/selectors">CSS Selector Level 3</a></li>
+            <li><a href="https://www.w3.org/TR/css3-mediaqueries">미디어쿼리</a></li>
+            <li><a href="https://computer.silla.ac.kr">컴퓨터공학부</a></li>
+            <li><a href="#">메뉴 4</a></li>
+
+        </ul>
+    
+</body>
+</html>
