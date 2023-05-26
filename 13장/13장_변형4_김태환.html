@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 4 - 김태환</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 134px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+            -webkit-perspective: 200px;
+            -webkit-perspective: rotate(20deg);
+            -ms-perspective: rotate(20deg);
+            -moz-perspective: rotate(20deg);
+            -o-perspective: rotate(20deg);
+            perspective: rotate(20deg);
+            perspective: 200px;
+        }
+        .rotatey:hover {
+            -webkit-transform: rotateY(20deg);
+            -ms-transform: rotateY(45deg);
+            -moz-transform: rotateY(45deg);
+            -o-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+        }
+        .rotatez:hover {
+            -webkit-transform: rotateZ(40deg);
+            -ms-transform: rotateZ(40deg);
+            -moz-transform: rotateZ(40deg);
+            -o-transform: rotateZ(40deg);
+            transform: rotateZ(40deg);
+
+        }
+        .rotatexyz:hover {
+            -webkit-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+            -ms-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+            -moz-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+            -o-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+            transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="rotatex">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatey">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatez">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatexyz">
+            <img src="images/fruit.jpg">
+        </div>
+</body>
+</html>
