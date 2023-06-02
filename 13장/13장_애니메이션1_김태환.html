@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션1 - 김태환</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-name: change-bg;
+            animation-duration: 3s;
+        }
+
+        @keyframes change-bg {
+            from{
+                background-color: blue;
+                border: 2px solid red;
+            }
+            
+            to {
+                background-color: rgb(229, 255, 0);
+                border: 2px solid rgb(255, 200, 200);
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+    
+    </div>
+    <div id="box2">
+
+    </div>
+</body>
+</html>

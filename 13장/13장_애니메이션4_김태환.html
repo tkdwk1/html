@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션4 - 김태환</title>
+    <style>
+        #box1 {
+            height: 100px;
+            width: 100px;
+            margin-top: 50px;
+            margin-left: 100px;
+            padding: 20px;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotate {
+            from {
+                background-color: rgb(255, 219, 165);
+                transform: perspective(120px) rotateX(1deg) rotateY(0deg'angle');
+            }
+            50% {
+                background-color: rgb(61, 194, 255);
+                transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+            }
+            to {    
+                background-color: rgb(0, 27, 164);
+                transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+    </div>
+</body>
+</html>
