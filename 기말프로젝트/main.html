@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>main</title>
+    <style>
+        .image-effect {
+            position: relative;
+            display: inline-block;
+        }
+        .image-effect img {
+            transition: opacity 0.3s;
+        }
+        .image-effect:hover img {
+            opacity: 0.8;
+        }
+        .image-effect img {
+            transition: transform 0.3s; /* 효과 전환에 대한 시간 설정 */
+        }
+        .image-effect:hover img {
+            transform: scale(1.02);
+        }
+        
+        body {
+            background-color: rgb(16, 16, 16);
+        }
+        #main {
+            width: 1200px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 {
+            color: rgb(161, 255, 255);
+        }
+        .text-effect {
+            display: inline-block;
+            transition: color 0.3s; /* 효과 전환에 대한 시간 설정 */
+        }
+        .text-effect h2 {
+            transition: transform 0.3s; /* 효과 전환에 대한 시간 설정 */
+        }
+        .text-effect:hover h2 {
+            transform: scale(1.02);
+        }
+        .text-effect:hover h2 {
+            color: rgb(0, 221, 255); /* 마우스 호버 시 텍스트 색상 변경 */
+            font-weight: bold; /* 마우스 호버 시 텍스트 굵게 설정 */
+        }
+        .text-effect2 {
+            display: inline-block;
+            transition: color 0.3s; /* 효과 전환에 대한 시간 설정 */
+        }
+        .text-effect2 h2 {
+            transition: transform 0.3s; /* 효과 전환에 대한 시간 설정 */
+        }
+        .text-effect2:hover h2 {
+            transform: scale(1.02);
+        }
+        .text-effect2:hover h2 {
+            color: rgb(0, 221, 255); /* 마우스 호버 시 텍스트 색상 변경 */
+            font-weight: bold; /* 마우스 호버 시 텍스트 굵게 설정 */
+        }
+        .text-effect3 {
+            display: inline-block;
+            transition: color 0.3s; /* 효과 전환에 대한 시간 설정 */
+        }
+        .text-effect3 h2 {
+            transition: transform 0.3s; /* 효과 전환에 대한 시간 설정 */
+        }
+        .text-effect3:hover h2 {
+            transform: scale(1.02);
+        }
+        .text-effect3:hover h2 {
+            color: rgb(0, 221, 255); /* 마우스 호버 시 텍스트 색상 변경 */
+            font-weight: bold; /* 마우스 호버 시 텍스트 굵게 설정 */
+        }
+        .text-effect4 {
+            display: inline-block;
+            transition: color 0.3s; /* 효과 전환에 대한 시간 설정 */
+        }
+        .text-effect4 h2 {
+            transition: transform 0.3s; /* 효과 전환에 대한 시간 설정 */
+        }
+        .text-effect4:hover h2 {
+            transform: scale(1.02);
+        }
+        .text-effect4:hover h2 {
+            color: rgb(0, 221, 255); /* 마우스 호버 시 텍스트 색상 변경 */
+            font-weight: bold; /* 마우스 호버 시 텍스트 굵게 설정 */
+        }
+
+
+    </style>
+</head>
+<body>
+    <img src="images/949fb1c4a6b9ec235ad36e747fbcf59a.png" id="main">
+    <div class="image-effect">
+        <a href="https://www.escapefromtarkov.com/" target="_blank">
+            <img src="images/escape.png" id="second" alt="Image">
+    </div>
+    <div class="text-effect">
+        <a href="introduce.html" target="_blank">
+            <h2 id="introduce">Introduce</h2>
+        </a>
+
+    </div>
+    <div class="text-effect2">
+        <a href="https://escapefromtarkov.fandom.com/wiki/Quests#List_of_Quests" target="_blank">
+            <h2 id="quest">In-game quests</h2>
+        </a>
+    </div>
+    <div class="text-effect3">
+        <a href="https://twitter.com/bstategames" target="_blank"> 
+            <h2 id="twitter">Twitter</h2>
+        </a>
+    </div>
+    <div class="text-effect4">
+        <a href="https://tarkov-market.com/" target="_blank">
+            <h2 id="flea">Flea-Market</h2>
+        </a>
+    </div>
+</body>
+</html>
