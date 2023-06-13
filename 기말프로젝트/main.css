@@ -17,7 +17,7 @@
     display: flex;
     position: absolute;
     top: -250px;
-    left: 440px;
+    left: 630px;
 }
 #introduce {
     position: relative;
@@ -28,7 +28,7 @@
     display: flex;
     position: absolute;
     top: 200px;
-    left: 210px;
+    left: 310px;
     font-size: 40px;
 }
 #quest {
@@ -40,7 +40,7 @@
     display: flex;
     position: absolute;
     top: 200px;
-    left: 1170px;
+    left: 1370px;
     font-size: 40px;
 }
 #twitter {
@@ -52,7 +52,7 @@
     display: flex;
     position: absolute;
     top: 460px;
-    left: 240px;
+    left: 340px;
     font-size: 40px;
 }
 #flea {
@@ -64,6 +64,18 @@
     display: flex;
     position: absolute;
     top: 460px;
-    left: 1200px;
+    left: 1400px;
     font-size: 40px;
+}
+#shopping {
+    position: relative;
+    width: 650px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 1700px;
 }
