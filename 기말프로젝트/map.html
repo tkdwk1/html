@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+    <style>
+        body {
+            background-color: rgb(34, 31, 31);
+            width: 100%;
+        }
+        .title {
+            color: aliceblue;
+            width: 100px;
+            height: 300px;
+        }
+        .detail {
+            color: aliceblue;
+        }
+        .container {
+            display: flex;
+        }
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px;
+            width: 1100px;
+            height: 1800px;
+            background-color: #140e0e;
+            border-radius: 20px;
+            position: relative;
+            top: 180px; 
+            left: 400px;
+        }
+        .box {
+            width: 100px;
+            height: 30px;
+            background-color: rgb(90, 90, 90);
+            color: rgb(182, 164, 0);
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            text-align: center;
+
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        #box1 {
+            position: relative;
+            top: 80px; 
+            left: 580px; 
+        }
+        #box2 {
+            position: relative;
+            top: 80px; 
+            left: 610px;
+        }
+        #box3 {
+            position: relative; 
+            top: 80px;
+            left: 640px; 
+        }
+        #box4 {
+            position: relative; 
+            top: 80px; 
+            left: 670px;
+        }
+        .title h1 {
+            width: 300px;
+            position: relative; 
+            top: 20px; 
+            left: -2650px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div #subtitle {
+            width: 790px;
+            position: relative; 
+            top: 40px; 
+            left: -2650px; 
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #house {
+            position: fixed;
+            top: 50px;
+            left: 1700px;
+            z-index: 1;
+        }
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        li {
+            position: relative;
+            float: left;
+            padding: 0px;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        li img {
+            width: 500px;
+            margin: 10px;
+            padding: 0px;
+            float: left;
+            z-index: 5;
+            position: relative;
+        }
+
+        .one .caption {
+            position: absolute;
+            top : 210px;
+            width: 500px;
+            height: 260px;
+            padding-top: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            position: relative;
+            left: 10px;
+        }
+        .two .caption {
+            position: absolute;
+            top : 210px;
+            width: 500px;
+            height: 290px;
+            padding-top: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            position: relative;
+            left: 10px;
+        }
+        .three .caption {
+            position: absolute;
+            top : 210px;
+            width: 500px;
+            height: 340px;
+            padding-top: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            position: relative;
+            left: 10px;
+        }
+        .four .caption {
+            position: absolute;
+            top : 210px;
+            width: 500px;
+            height: 250px;
+            padding-top: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            position: relative;
+            left: 10px;
+        }
+        .five .caption {
+            position: absolute;
+            top : 210px;
+            width: 500px;
+            height: 280px;
+            padding-top: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            position: relative;
+            left: 10px;
+        }
+        .caption #p1 {
+            position: absolute;
+            top: 80px;
+            font-size: 20px;
+        }
+        .caption #p2 {
+            position: absolute;
+            top: 120px;
+            font-size: 17px;
+        }
+        .caption #p3 {
+            position: absolute;
+            top: 180px;
+            font-size: 17px;
+        }
+        .caption h1 {
+            position: absolute;
+            top: 10px;
+        }
+        li:hover .caption {
+            opacity: 10;
+            transform: translateY(-200px);
+        }
+        .title h1 {
+            width: 300px;
+            position: relative; 
+            top: 20px; 
+            left: -2650px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div #subtitle {
+            width: 790px;
+            position: relative; 
+            top: 40px; 
+            left: -2650px; 
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .title {
+            color: aliceblue;
+            position: relative;
+            left: 2700px;
+        }
+        .title #title {
+            font-size: 40px;
+        }
+        .title #subtitle {
+            font-size: 30px;
+        }
+        .background {
+            position: relative; /* 상대적인 위치 설정 */
+            height: 100vh; /* 전체 화면 높이로 설정 */
+            background-size: cover; /* 이미지를 커버로 표시 */
+            background-repeat: no-repeat; /* 이미지 반복하지 않음 */
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="main.html" id="house">
+            <img src="images/house.png" width="90" height="95">
+        </a>
+        <div class="background">
+            <img src="images/pxfuel (2).jpg">
+        </div>
+        <div class="container">
+            <a href="introduce.html">
+                <div class="box" id="box1">
+                    개요
+                </div>
+            </a>
+            <a href="map.html" id="box2">
+                <div class="box">
+                    맵
+                </div>
+            </a>
+            <a href="tectical.html" id="box3">
+                <div class="box">
+                    전술 팁
+                </div>
+            </a>
+            
+            <a href="item.html">
+                <div class="box" id="box4">
+                    아이템
+                </div>
+            </a>
+        </div>
+        <div class="container2">
+            <div class='details'>
+                <div class="title">
+                    <h1 id="title">게임 개요</h1>
+                    <h3 id="subtitle">Escape from Tarkov의 배경인 Tarkov시의 지역들입니다.</h3>
+                </div>
+                <div class="detail">
+                    
+                    <ul>
+                        <div class="one">
+                            <li>
+                                <img src="images/custom.png">
+                                <div class="caption">
+                                    <h1>Custom</h1>
+                                    <p id="p1">PMC 8~14명 / 제한시간 35분</p>
+                                    <p id="p2">타르코프시 내에 있는 세관이자 산업 단지이다.</p>
+                                    <p id="p3">보스는 르샬라, 컬티스트가 출현한다.</p>   
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/factory.png">
+                                <div class="caption">
+                                    <h1>Factory</h1>
+                                    <p id="p1">PMC 4~6명 / 제한시간 주간 20분/야간 25분</p>
+                                    <p id="p2">상인 메카닉이 타르코프 사태 이전에 있었던 화학 공장이다.</p>
+                                    <p id="p3">보스는 타길라가 출현한다.</p>   
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/shoreline.png">
+                                <div class="caption">
+                                    <h1>Shoreline</h1>
+                                    <p id="p1">PMC 10~13명 / 제한시간 45분</p>
+                                    <p id="p2">타르코프의 휴양지이자 유일한 탈출구인 터미널과 연결된 곳이다.</p>
+                                    <p id="p3">보스는 세니타가 출현한다.</p>   
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/lab.png">
+                                <div class="caption">
+                                    <h1>Lab</h1>
+                                    <p id="p1">PMC 6~10명 / 제한시간 35분</p>
+                                    <p id="p2">타르코프 사태의 원흉, 테라 그룹의 불법 연구가 벌어진 장소이다.</p>
+                                    <p id="p3">보스는 출현하지 않는다.</p>   
+                                </div>
+                            </li>
+                        </div>
+
+                        <div class="two">
+                            <li>
+                                <img src="images/interchange.png">
+                                <div class="caption">
+                                    <h1>Interchange</h1>
+                                    <p id="p1">PMC 10~14명 / 제한시간 45분</p>
+                                    <p id="p2">인터체인지의 중앙에 위치한 종합백화점인 울트라몰이다.</p>
+                                    <p id="p3">보스는 킬라가 출현한다.</p>   
+                                </div>
+                            </li>
+                        </div>
+                        <div class="three">
+                            <li>
+                                <img src="images/wood.png">
+                                <div class="caption">
+                                    <h1>Wood</h1>
+                                    <p id="p1">PMC 8-12명 / 제한시간 40분</p>
+                                    <p id="p2">타르코프시 인근에 위치한 국립공원이다.</p>
+                                    <p id="p3">보스는 슈트르만이 출현한다.</p>   
+                                </div>
+                            </li>
+                        </div>
+                        <div class="four">
+                            <li>
+                                <img src="images/reserve.png">
+                                <div class="caption">
+                                    <h1>Reserve</h1>
+                                    <p id="p1">PMC 9~12명 / 제한시간 40분</p>
+                                    <p id="p2">러시아 연방군이 사용하던 노르빈스크 외곽의 군사 기지이다.</p>
+                                    <p id="p3">보스는 글루하가 출현한다.</p>   
+                                </div>
+                        </div>
+                        <div class="five">
+                                <li>
+                                    <img src="images/lighthouse.png">
+                                    <div class="caption">
+                                        <h1>lighthouse</h1>
+                                        <p id="p1">PMC 9-12명 / 제한시간 40분</p>
+                                        <p id="p2">USEC의 최초 상륙지점이자 대규모 거점이다.</p>
+                                        <p id="p3">보스는 자랴키가 출현한다.</p>   
+                                    </div>
+                                </li>
+                            </li>
+                        </div>
+                    </ul>                
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

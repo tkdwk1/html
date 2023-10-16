@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+    <style>
+        body {
+            background-color: rgb(34, 31, 31);
+            width: 100%;
+        }
+        #house {
+            position: fixed;
+            top: 50px;
+            left: 1700px;
+            z-index: 1;
+        }
+        .title h1 {
+            width: 300px;
+            position: relative; 
+            top: 50px; 
+            left: -1450px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div #subtitle {
+            width: 790px;
+            position: relative; 
+            top: 50px; 
+            left: -1450px; 
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .title {
+            color: aliceblue;
+            width: 1000px;
+            height: 300px;
+        }
+        .detail {
+            color: aliceblue;
+        }
+        .detail {
+            line-height: 40px;
+        }
+        .detail h3 {
+            font-size: 30px;
+        }
+        .detail #h3_1 {
+            width: 500px;
+            position: relative;
+            top: -160px; 
+            left: -1450px; 
+        }
+        .detail #p1 {
+            width: 500px;
+            position: relative;
+            top: -230px; 
+            left: -1050px;
+            font-size: 20px;
+        }
+
+        .detail #h3_2 {
+            width: 500px;
+            position: relative; 
+            top: -100px;
+            left: -1450px; 
+        }
+        .detail #p2 {
+            width: 500px;
+            position: relative; 
+            top: -220px; 
+            left: -1050px; 
+            font-size: 20px;
+        }
+
+        .detail #h3_3 {
+            width: 500px;
+            position: relative;
+            top: 50px; 
+            left: -1450px; 
+        }
+        .detail #p3 {
+            width: 500px;
+            position: relative;
+            top: -230px; 
+            left: -1050px; 
+            font-size: 20px;
+        }
+
+        .detail #h3_4 {
+            width: 500px;
+            position: relative;
+            top: 50px; 
+            left: -1450px; 
+        }
+        .detail #p4 {
+            width: 500px;
+            position: relative;
+            top: -200px; 
+            left: -970px; 
+            font-size: 20px;
+        }
+
+        .detail #h3_5 {
+            width: 500px;
+            position: relative;
+            top: -50px; 
+            left: -1450px; 
+        }
+        .detail #p5 {
+            width: 500px;
+            position: relative;
+            top: -130px; 
+            left: -1050px; 
+            font-size: 20px;
+        }
+        .container {
+            display: flex;
+        }
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px;
+            width: 1100px;
+            height: 3900px;
+            background-color: #140e0e;
+            border-radius: 20px;
+            position: relative; 
+            top: 180px; 
+            left: 400px;
+        }
+        .box {
+            width: 100px;
+            height: 30px;
+            background-color: rgb(90, 90, 90);
+            color: rgb(182, 164, 0);
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            text-align: center;
+
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        #box1 {
+            position: relative; 
+            top: 80px; 
+            left: 580px; 
+        }
+        #box2 {
+            position: relative;
+            top: 80px; 
+            left: 610px;
+        }
+        #box3 {
+            position: relative; 
+            top: 80px;
+            left: 640px; 
+        }
+        #box4 {
+            position: relative; 
+            top: 80px; 
+            left: 670px;
+        }
+        #img1 {
+            position: relative; 
+            top: 250px; 
+            left: 89px;  
+            width: 450px;
+            height: 290px;
+        }
+        #img2 {
+            position: relative;
+            top: 850px; 
+            left: -200px;  
+            width: 450px;
+            height: 290px;
+        }
+        #img3 {
+            position: relative;
+            top: 1650px; 
+            left: -500px;  
+            width: 450px;
+            height: 290px;
+        }
+        #img4 {
+            position: relative;
+            top: 2500px; 
+            left: -800px;  
+            width: 450px;
+            height: 290px;
+        }
+        #img5 {
+            position: relative;
+            top: 3300px; 
+            left: -1250px;  
+            width: 450px;
+            height: 290px;
+        }
+        .background {
+            position: relative; /* 상대적인 위치 설정 */
+            height: 100vh; /* 전체 화면 높이로 설정 */
+            background-size: cover; /* 이미지를 커버로 표시 */
+            background-repeat: no-repeat; /* 이미지 반복하지 않음 */
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="main.html" id="house">
+            <img src="images/house.png" width="90" height="95">
+        </a>
+        <div class="background">
+            <img src="images/pxfuel (2).jpg">
+        </div>
+        <div class="container">
+            <a href="introduce.html">
+                <div class="box" id="box1">
+                    개요
+                </div>
+            </a>
+            <a href="map.html" id="box2">
+                <div class="box">
+                    맵
+                </div>
+            </a>
+            <a href="tectical.html" id="box3">
+                <div class="box">
+                    전술 팁
+                </div>
+            </a>
+            <a href="item.html">
+                <div class="box" id="box4">
+                    아이템
+                </div>
+            </a>
+        </div>
+        <div class="container2">
+            <img src="images/iskra 225936.png" id="img1">
+            <img src="images/Meds.png" id="img2">
+            <img src="images/injector.png" id="img3" style="width: 300px; height: 190px;">
+            <img src="images/ammo.png" id="img4">
+            <img src="images/lig.png" id="img5">
+            <div class='details'>
+                <div class="title">
+                    <h1>아이템</h1>
+                    <h3 id="subtitle">음식, 의약품, 탄약, 열쇠 ,장비 등을 정리한 페이지 입니다.</h3>
+                </div>
+                <div class="detail">
+                    <h3 id="h3_1">음식</h3>
+                    <p id="p1">섭취시 에너지를 채워주는 소모 아이템. 에너지가 낮아지면 피로 상태에 빠져 모든 동작이 20% 느려진다. 완전히 고갈되면 2초마다 체력이 1씩 감소하므로 레이드 출발 전에 에너지를 체크하는 것이 좋다. 에너지의 소모 속도는 매우 느린 편으로, 일반적인 상태라면 50분 레이드 기준으로 시간제한에 도달할때까지 기다려야 간신히 에너지가 0에 가까워지는 수준이다. 다만 복부 피격, 주사제 아이템 사용 등의 이유로 에너지가 삽시간에 바닥날 수는 있다. 허나 음식과 물은 레이드에서 흔하게 구할 수 있는 아이템들이라 가방이나 조끼에 음식을 구태여 챙겨 들어갈 필요성은 낮은 편.</p>
+                    
+                    <h3 id='h3_2'>의약품</h3>
+                    <p id="p2">진통제는 공통적으로 고통 효과를 제거해주며, 진통 효과의 지속 시간 동안 화면이 선명해진다. 설정상 이 모든 사태의 근원인 테라 그룹에서 제작한 의약품들로, 효과가 지속되는 동안은 골절 효과를 무시하기 때문에 다리가 골절 또는 파괴되었는데 부목이 없을 경우 유용하게 사용된다.<br>지혈 아이템은 출혈 상태를 치료해 주는 의료품이다. 과다출혈은 일반 출혈과는 비교도 안 될 정도로 체력이 심하게 빠지기 때문에 빠르게 막지 않으면 큰 피해를 입거나 죽기 십상이라 거의 필수적으로 챙기는 아이템이다.회복 아이템을 구하기 힘든 유캐브 플레이 중에는 기껏 비싼 아이템을 먹고 출혈을 못 막아서 허무하게 죽는 경우도 있으니 파밍 중에 발견했다면 하나쯤 챙기는 것이 좋다.                    </p>
+                    
+                    <h3 id="h3_3">주사기</h3>
+                    <p id="p3">각종 버프 효과를 제공하는 일회용 자극제 주사기. 매우 유용하고 강력한 효과를 제공하며, 사용 시간도 매우 짧고 사용 시 소리도 작아서 교전 직전이나 교전 도중 잠깐 엄폐한 순간에도 빠르게 사용할 수 있다.유용한 만큼이나 가격도 비싸고, 효과 지속시간 도중/이후엔 각종 디버프가 적용되기 때문에 신중히 사용해야 한다. 예를 들어 아드레날린은 진통과 강력한 도트힐에 더해 지구력, 힘, 반동제어 능력까지 올려주어 교전에 큰 어드밴티지를 주지만, 효과가 끝난 이후엔 수분 30과 에너지 24를 뽑아가며, 멜도닌은 무려 900초 동안 입는 피해량 감소와 힘과 지구력 레벨 대폭 증가, 스태미너 회복 효과까지 부여해주지만 그 900초 동안 수분과 에너지를 쭉쭉 빨아먹기 때문에 여분의 식량과 음료가 반드시 필요하다.원래 자극제는 따로 보관함이 없어 프로피탈과 모르핀, 뮬 정도 외에는 챙겨 가는 경우가 거의 없었으나, 주사기 케이스가 생긴 뒤에는 자극제를 이것저것 쟁여놓고 상황에 맞게 쓸 수 있게 되어 비주류 자극제들도 사용해 볼 만한 환경이 조성됐다.</p>
+                    
+                    <h3 id="h3_4">탄약</h3>
+                    <p id="p4">타르코프의 탄약은 총기와 별도로 구성된 소모품으로, 같은 구경이라도 다양한 스탯을 가진 여러 종류의 탄환이 세분화되어 존재한다. 때문에 같은 총을 사용하더라도 장전된 탄약에 따라 완전히 다른 전투를 해야 한다. 어떤 총에 어떤 총알을 삽탄하고 상대의 어디를 노리기 위해 얼마나 접근할지 같은 전술적인 요소까지 고려할 정도로 탄약은 굉장히 중요한 부분이다. 대부분 교전 이후 교전시 입은 부상을 치료하는 시간을 제외하고도 여분의 탄창이 없다면 탄약을 직접 총기나 탄창에 삽탄을 해야하기 때문에 시간적인 측면에서 굉장히 많이 주의해야한다. 관통력이 높다면 데미지는 떨어지는 경우가 대부분이라 마냥 관통력만 맹신하는것도 좋지않다. 물론 대부분 방어구를 잘 입지않은 도끼런이나 스케브에 한정되는 소리이기도 하고 자동화기를 사용한다면 그리 큰 문제는 아니지만 PMC라면 방어구 보호를 잘 받지 않는 팔이나 다리에 맞을때 충분한 데미지를 주지 못해서 비싼탄약을 낭비하게 되는 일이 발생할수도 있다. 이는 초탄과 차탄간의 딜레이가 큰 DMR이나 저격소총의 경우에 특히 신경써야하는데 적에게 치명상을 입히고도 차탄을 박기전에 빠르게 사선에서 도망칠수도 있다.</p>
+                    
+                    <h3 id="h3_5">장비</h3>
+                    <p id="p5">방어구 레벨 표준은 미국의 NIJ 인증(1~4) 대신 러시아의 GOST-R 50744-95령(1~6a)으로 기준을 삼는다. 단, 9단계의 레벨로 나뉘는 원본과 달리 인게임에서는 2a, 5a, 6a를 생략하여 6단계로 나뉘게 된다.방어구들의 방탄 성능은 내구도뿐만 아니라 재질에 따라서도 달라진다. 이 재질에 따라 방어구들의 실질적인 내구도가 결정되며, 표기되는 내구도 수치가 같더라도 재질이 다르다면 실제 방호력 또한 다르다. 레이드 종료 후 손상된 방탄복을 수리하면 최대 내구도가 약간 감소하는데, 이 최대 내구도 감소치 또한 방어구의 재질에 영향을 받는다. 수리 효율이 좋은 재질일수록 수리 시의 내구도 감소가 적어 여러 번 수리해 입을 수 있다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

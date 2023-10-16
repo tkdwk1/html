@@ -6,6 +6,13 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>main</title>
     <style>
+        div p {
+            color: rgba(207, 207, 207, 0.801);
+        }
+        div #subtitle {
+            color: rgb(131, 103, 80);
+            font-size: 22px;
+        }
         #shopping {
             width: 60px;
         }
@@ -36,101 +43,167 @@
             margin-left: auto;
             margin-right: auto;
         }
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .sub1 {
+            animation: fade 2s ease;
+        }
+        .sub2 {
+            animation: fade 3s ease;
+        }
+        .sub3 {
+            animation: fade 4s ease;
+        }
+        .sub4 {
+            animation: fade 5s ease;
+        }
+        #introduce {
+            animation: fade 2s ease;
+        }
+        #quest {
+            animation: fade 3s ease;
+        }
+        #twitter {
+            animation: fade 4s ease;
+        }
+        #flea {
+            animation: fade 5s ease;
+        }
+        #second {
+            animation: fade 5s ease;
+        }
+
         h2 {
             color: rgb(161, 255, 255);
         }
         .text-effect {
             display: inline-block;
-            transition: color 0.3s; /* 효과 전환에 대한 시간 설정 */
+            transition: color 0.3s;
         }
         .text-effect h2 {
-            transition: transform 0.3s; /* 효과 전환에 대한 시간 설정 */
+            transition: transform 0.3s;
         }
         .text-effect:hover h2 {
             transform: scale(1.02);
         }
         .text-effect:hover h2 {
-            color: rgb(0, 221, 255); /* 마우스 호버 시 텍스트 색상 변경 */
-            font-weight: bold; /* 마우스 호버 시 텍스트 굵게 설정 */
+            color: rgb(0, 221, 255);
+            font-weight: bold; 
         }
         .text-effect2 {
             display: inline-block;
-            transition: color 0.3s; /* 효과 전환에 대한 시간 설정 */
+            transition: color 0.3s; 
         }
         .text-effect2 h2 {
-            transition: transform 0.3s; /* 효과 전환에 대한 시간 설정 */
+            transition: transform 0.3s; 
         }
         .text-effect2:hover h2 {
             transform: scale(1.02);
         }
         .text-effect2:hover h2 {
-            color: rgb(0, 221, 255); /* 마우스 호버 시 텍스트 색상 변경 */
-            font-weight: bold; /* 마우스 호버 시 텍스트 굵게 설정 */
+            color: rgb(0, 221, 255);
+            font-weight: bold;
         }
         .text-effect3 {
             display: inline-block;
-            transition: color 0.3s; /* 효과 전환에 대한 시간 설정 */
+            transition: color 0.3s;
         }
         .text-effect3 h2 {
-            transition: transform 0.3s; /* 효과 전환에 대한 시간 설정 */
+            transition: transform 0.3s; 
         }
         .text-effect3:hover h2 {
             transform: scale(1.02);
         }
         .text-effect3:hover h2 {
-            color: rgb(0, 221, 255); /* 마우스 호버 시 텍스트 색상 변경 */
-            font-weight: bold; /* 마우스 호버 시 텍스트 굵게 설정 */
+            color: rgb(0, 221, 255);
+            font-weight: bold;
         }
         .text-effect4 {
             display: inline-block;
-            transition: color 0.3s; /* 효과 전환에 대한 시간 설정 */
+            transition: color 0.3s;
         }
         .text-effect4 h2 {
-            transition: transform 0.3s; /* 효과 전환에 대한 시간 설정 */
+            transition: transform 0.3s;
         }
         .text-effect4:hover h2 {
             transform: scale(1.02);
         }
         .text-effect4:hover h2 {
-            color: rgb(0, 221, 255); /* 마우스 호버 시 텍스트 색상 변경 */
-            font-weight: bold; /* 마우스 호버 시 텍스트 굵게 설정 */
+            color: rgb(0, 221, 255);
+            font-weight: bold; 
         }
 
 
     </style>
 </head>
+
 <body>
     <img src="images/949fb1c4a6b9ec235ad36e747fbcf59a.png" id="main">
     <div class="image-effect">
         <a href="https://www.escapefromtarkov.com/" target="_blank">
-            <img src="images/escape.png" id="second" alt="Image">
+            <img src="images/46c7d98360bd8ccb6f7e0e675b672565.png" id="second" alt="Image">
         </a>
     </div>
-    <div class="text-effect">
-        <a href="introduce.html" target="_blank">
-            <h2 id="introduce">Introduce</h2>
-        </a>
+    <div class="animation">
+        <div class="text-effect">
+            <a href="introduce.html" target="_blank">
+                <h2 id="introduce">Introduce</h2>
+            </a>
 
+        </div>
+
+        <div class="text-effect2">
+            <a href="https://escapefromtarkov.fandom.com/wiki/Quests#List_of_Quests" target="_blank">
+                <h2 id="quest">In-game quests</h2>
+            </a>
+        </div>
+
+        <div class="text-effect3">
+            <a href="https://twitter.com/bstategames" target="_blank"> 
+                <h2 id="twitter">Twitter</h2>
+            </a>
+        </div>
+
+        <div class="text-effect4">
+            <a href="https://tarkov-market.com/" target="_blank">
+                <h2 id="flea">Flea-Market</h2>
+            </a>
+        </div>
     </div>
-    <div class="text-effect2">
-        <a href="https://escapefromtarkov.fandom.com/wiki/Quests#List_of_Quests" target="_blank">
-            <h2 id="quest">In-game quests</h2>
-        </a>
-    </div>
-    <div class="text-effect3">
-        <a href="https://twitter.com/bstategames" target="_blank"> 
-            <h2 id="twitter">Twitter</h2>
-        </a>
-    </div>
-    <div class="text-effect4">
-        <a href="https://tarkov-market.com/" target="_blank">
-            <h2 id="flea">Flea-Market</h2>
-        </a>
-    </div>
+
     <div class="shopping">
         <a href="Purchase.html" target="_blank">
             <img src="images/shopping.png"  id="shopping">
         </a>
+    </div>
+    <div class="animated-element">
+        <div class="sub1">
+            <p>"오늘날 가장 어렵고 힘든 게임 중 하나"</p>
+            <p class="sans-serif" id="subtitle">3D&nbspJuegos</p>
+        </div>
+
+        <div class="sub2">
+            <p>"맹렬하게 빗발치는 총성 속에서 살아남기"</p>
+            <p class="sans-serif" id="subtitle">Jeuxvideo<p>
+        </div>
+
+        <div class="sub3">
+            <p>"현실적인 FPS 액션, MMO 역학 및 생존 메커니즘의 
+                흥미로운 조합"</p>
+            <p class="sans-serif" id="subtitle">Eurogamer</p>
+        </div>
+        <div class="sub4">
+            <p>"현실적인 FPS 액션, MMO 역학 및 생존 메커니즘의 
+                흥미로운 조합"</p>
+            <p class="sans-serif" id="subtitle">Rockpapershot</p>
+        </div>
     </div>
 </body>
 </html>

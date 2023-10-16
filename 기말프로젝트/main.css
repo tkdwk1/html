@@ -16,7 +16,7 @@
     margin-right: auto;
     display: flex;
     position: absolute;
-    top: -250px;
+    top: -350px;
     left: 630px;
 }
 #introduce {
@@ -27,8 +27,8 @@
     margin-right: auto;
     display: flex;
     position: absolute;
-    top: 200px;
-    left: 310px;
+    top: 150px;
+    left: 1370px;
     font-size: 40px;
 }
 #quest {
@@ -39,7 +39,7 @@
     margin-right: auto;
     display: flex;
     position: absolute;
-    top: 200px;
+    top: 280px;
     left: 1370px;
     font-size: 40px;
 }
@@ -51,8 +51,8 @@
     margin-right: auto;
     display: flex;
     position: absolute;
-    top: 460px;
-    left: 340px;
+    top: 410px;
+    left: 1370px;
     font-size: 40px;
 }
 #flea {
@@ -63,8 +63,8 @@
     margin-right: auto;
     display: flex;
     position: absolute;
-    top: 460px;
-    left: 1400px;
+    top: 540px;
+    left: 1370px;
     font-size: 40px;
 }
 #shopping {
@@ -78,4 +78,24 @@
     position: absolute;
     top: 50px;
     left: 1700px;
+}
+.sub1 {
+    position: absolute;
+    top: 170px;
+    left: 150px;
+}
+.sub2 {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+.sub3 {
+    position: absolute;
+    top: 430px;
+    left: 150px;
+}
+.sub4 {
+    position: absolute;
+    top: 560px;
+    left: 150px;
 }

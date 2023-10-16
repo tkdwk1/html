@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tectical</title>
+    <style>
+        body {
+            background-color: rgb(34, 31, 31);
+            width: 100%;
+        }
+        .container {
+            display: flex;
+        }
+        .box {
+            width: 100px;
+            height: 30px;
+            background-color: rgb(90, 90, 90);
+            color: rgb(182, 164, 0);
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            text-align: center;
+
+        }
+        .title {
+            color: aliceblue;
+            width: 900px;
+            height: 300px;
+            position: relative;
+            left: -1450px;
+        }
+        .detail {
+            color: aliceblue;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        #box1 {
+            position: relative;
+            top: 80px; 
+            left: 580px; 
+        }
+        #box2 {
+            position: relative;
+            top: 80px; 
+            left: 610px;
+        }
+        #box3 {
+            position: relative; 
+            top: 80px;
+            left: 640px; 
+        }
+        #box4 {
+            position: relative; 
+            top: 80px; 
+            left: 670px;
+        }
+        
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px;
+            width: 1100px;
+            height: 2100px;
+            background-color: #140e0e;
+            border-radius: 20px;
+            position: relative;
+            top: 180px; 
+            left: 400px;
+        }
+        .detail #p1 {
+            width: 500px;
+            line-height: 50px;
+            position: relative;
+            top: -50px;
+            left: -1450px;
+            font-size: 20px;
+        }
+
+        .detail #h3_1 {
+            width: 500px;
+            position: relative;
+            top: 50px;
+            left: -1450px;
+        }
+        .detail #h3_2 {
+            width: 500px;
+            position: relative;
+            top: 50px;
+            left: -1450px;
+        }
+        .detail #h3_3 {
+            width: 500px;
+            position: relative;
+            top: 150px;
+            left: -1450px;
+        }
+        .detail #p2 {
+            width: 500px;
+            line-height: 30px;
+            position: relative;
+            top: -40px;
+            left: -935px;
+        }
+        .detail #p3 {
+            width: 500px;
+            line-height: 30px;
+            position: relative;
+            top: 50px;
+            left: -935px;
+
+        }
+        .detail #p4 {
+            width: 500px;
+            line-height: 30px;
+            position: relative;
+            top: 130px;
+            left: -935px;
+        }
+        #vid1 {
+            position: relative;
+            top: 700px; 
+            left: 50px;  
+            width: 450px;
+            height: 290px;
+        }
+        #vid2 {
+            position: relative;
+            top: 1200px; 
+            left: -450px;  
+            width: 450px;
+            height: 290px;
+        }
+        #vid3 {
+            position: relative;
+            top: 1650px; 
+            left: -950px;  
+            width: 450px;
+            height: 290px;
+        }
+        .background {
+            position: relative; /* 상대적인 위치 설정 */
+            height: 100vh; /* 전체 화면 높이로 설정 */
+            background-size: cover; /* 이미지를 커버로 표시 */
+            background-repeat: no-repeat; /* 이미지 반복하지 않음 */
+            position: fixed;
+        }
+        #house {
+            position: fixed;
+            top: 50px;
+            left: 1700px;
+            z-index: 1; /* 이미지 위에 콘텐츠가 표시되도록 설정 */
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="main.html" id="house">
+            <img src="images/house.png" width="90" height="95">
+        </a>
+        <div class="background">
+            <img src="images/pxfuel (4).jpg">
+        </div>
+        <div class="container">
+            <a href="introduce.html">
+                <div class="box" id="box1">
+                    개요
+                </div>
+            </a>
+            <a href="map.html" id="box2">
+                <div class="box">
+                    맵
+                </div>
+            </a>
+            <a href="tectical.html" id="box3">
+                <div class="box">
+                    전술 팁
+                </div>
+            </a>
+            
+            <a href="item.html">
+                <div class="box" id="box4">
+                    아이템
+                </div>
+            </a>
+        </div>
+        <div class="container2">
+            <video src="images/PlaintiveVictoriousGraywolf-mobile.mp4" id="vid1" autoplay loop muted style="width: 500px; height: 300px;"></video>
+            <video src="images/MassiveCleverImperialeagle-mobile.mp4" id="vid2" autoplay loop muted style="width: 500px; height: 500px;"></video>
+            <video src="images/SparklingLegitimateCaimanlizard-mobile.mp4" id="vid3" autoplay loop muted style="width: 500px; height: 500px;"></video>
+            <img src="" id="img4">
+            <img src="" id="img5">
+            <img src="" id="img6">
+            <div class='details'>
+                <div class="title">
+                    <h1>CQB (CQC) 팁</h1>
+                    <h3 id="subtitle">Close Quarters Battle/Combat. CQB/CQC라고 한다. <br>
+                        근접 사격술, 백병전 기술, 특수한 상황에서의 행동원칙 등을 기반으로, <br>25-30m 이내의 적과 교전하는 전술체계를 아우르는 말이다.</h3>
+                </div>
+                <div class="detail">
+                    <p id="p1">주로 소화기(권총,소총,기관단총 등)여러가지 화기로 교전거리가 가까운 전투를 말한다. 대테러부대나 경찰 특공대들이 주로 사용하며,여러가지 방향의 테러상황을 진압하는 전술이다. 군대에서도 CQB를 할 수도 있는데 중요 건물 확보 등 다양한 임무 시에 할 수 있다고 한다.</p>
+                    <h3 id="h3_1">시야각 싸움</h3>
+                    <p id="p2">사람은 누구나 총 맞으면 죽는 것은 똑같기 때문에, 시야각을 어떻게 점하느냐가 승부를 가른다. 보여야지 쏘든 말든 결정을 할 수가 있다. 문 앞에 멍하니 서 있으면 죽는다는 격언은 여기서 기인한다. 문 앞은 대표적인 죽음의 깔때기(fatal funnel, 페이탈 퍼널)이다. 노출되면 죽기 딱 좋은 부채꼴 형태 구역이라는 의미이다. 엄폐물이 아예 없는 개활지에 노출된 거라 보면 된다. 문틀, 창틀, 자동차 창문틀, 모서리, 엄폐물 등등 시야를 가리는 엄폐물을 끼고 전방을 바라보면 사람 시야각에 맞게끔 가려진 곳을 빼고 시야가 형성 된다. 먼저 각을 점하고 농성중인 쪽은 그 각을 온전하게 통제할 수 있고, 진입하는 쪽은 무방비하게 당하지 않게끔 각을 찔끔찔끔 째면서 들어가거나, 적이 있는 게 확실할 경우 던지고 등의 기만책을 쓰고 들어가야 한다. 그래서 수색 시 복도, 발코니 등 시야가 넓은 곳을 점하면 감시에 매우 유리해지며, 반대로 적이 자리잡은 곳으로 들어갈 때에는 최대한 노출을 피하다가 한꺼번에 들어가야 한다. FPS 게임에서 q,e키로 모서리 너머를 체크하는 건 현실 고증이다. 그런 식으로 모서리를 조금씩 체크하다가, 들어가야 할 때에는 섬광탄을 까거나, 우회하거나, 최대한 많은 총구가 적을 겨누게끔 여럿이 동시에 들어간다. 공격 전에는 조용하고 신중하게, 공격할 때에는 빠르고 격렬하게 움직여야 하는 건 기본이다.</p>
+                    <h3 id='h3_2'>속도, 기습, 폭력성</h3>
+                    <p id="p3">미군 시가전 교범에서 실내전의 필수요소로 꼽았고, 손자병법에서 말하는 ‘풍림화산음뢰’와도 일맥상통하는 말이다. <br>움직일 때는 바람처럼, 가만히 있을 때는 숲처럼, 공격할 때는 불처럼, 지킬 때는 산처럼, 숨을 때는 그림자처럼, 기습할 때는 번개처럼 행동하라는 지침이다. 이 원리대로 공격할 때만큼은 번개처럼 빠르게, 바람처럼 상대방이 예상치 못하게, 불처럼 격렬하게 들이쳐야 공격자 입장에서 손해를 안 본다. 방어적인 입장이라면 공격자의 기세에 <br>휘둘리지 않고 최대한 침착하고 조용하게 상황을 통제하면서 <br>대응하면 승산이 있다. 숲처럼 조용하게, 그림자처럼 은밀하게, <br>산처럼 든든하게 지키는 원리다.</p>
+                    <h3 id="h3_3">소리</h3>
+                    <p id="p4">소리로 적의 위치와 동태를 파악하는 사운드 플레이가 중요하다. 현실에서도 마찬가지다. <br>공격할 때에는 격렬하고 빠르게 쳐들어가야 하는 만큼, 공격하기 전에는 최대한 침착하게 움직여서 소음은 덜 내고 시야를 넓게 확보하는 게 유리하다. 사람은 생각보다 빨리 죽지는 않는다. <br>치명상을 입어도 길면 몇 분, 빨라도 몇 초는 지나야 의식을 잃거나 <br>생명활동을 멈춘다. <br>몇 초의 차이로도 흐름이 뒤집힐 수 있는 게 근접전인만큼 고급 소음 억제 헤드폰에는 폭음 억제와 더불어 미세음 증폭 기능이 있기 때문에, 이런 장비에 접근할 수 있는 이들은 우세를 점할 수 있다.</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

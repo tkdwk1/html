@@ -4,10 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purchase</title>
+    <link rel="stylesheet" type="text/css" href="purchase.css?after">
+    <style>
+        #how {
+            width: 500px;
+            color: aliceblue;
+            position: relative; 
+            top: 90px;
+            left: -1050px; 
+            
+        }
+        body {
+            background-color: rgb(34, 31, 31);
+        }
+        .detail {
+            font-size: 17px;
+        }
+        .container2 {
+            width: 1200px;
+            height: 3000px;
+            background-color: #140e0e;
+            border-radius: 20px;
+        }
+        
+        .detail {
+            color: aliceblue;
+        }
+        #img1 {
+            width: 700px;
+            position: relative; 
+            top: 600px;
+            left: 50px; 
+        }
+        #img2 {
+            width: 700px;
+            position: relative; 
+            top: 800px;
+            left: 50px; 
+        }
+        #img3 {
+            width: 700px;
+            position: relative; 
+            top: 1000px;
+            left: 50px; 
+        }
+        #tarkov {
+            width: 400px;
+            position: relative; 
+            top: 300px;
+            left: 50px; 
+        }
+        #detail_1 {
+            width: 800px;
+            position: relative; 
+            top: -1650px;
+            left: 50px; 
+        }
+        #detail_2 {
+            position: relative; 
+            top: -1250px;
+            left: 50px; 
+        }
+        #detail_3 {
+            position: relative; 
+            top: -650px;
+            left: 50px; 
+        }
+        #detail_4 {
+            position: relative; 
+            top: 150px;
+            left: 50px; 
+        }
+        .background {
+            position: relative; /* 상대적인 위치 설정 */
+            height: 100vh; /* 전체 화면 높이로 설정 */
+            background-size: cover; /* 이미지를 커버로 표시 */
+            background-repeat: no-repeat; /* 이미지 반복하지 않음 */
+            position: fixed;
+        }
+        #house {
+            position: fixed;
+            top: 50px;
+            left: 1700px;
+            z-index: 1;
+        }
+    </style>
 </head>
 <body>
-    <h2>
-        How to Purchase
-    </h2>
+    <div class="page">
+            <div class="background">
+                <img src="images/alive.jpg">
+            </div>
+            <a href="main.html" id="house">
+                <img src="images/house.png" width="90" height="95">
+            </a>
+            
+        <div class="container2" top: 50%, left: 50%>
+            <div>
+                <a href="https://www.escapefromtarkov.com/preorder-page">
+                    <img src="images/escape.png" id="tarkov">
+                </a>
+            </div>
+            <div class="detail_image">
+                <img src="images/eod.png" id="img1">
+                <img src="images/pay.png" id="img2">
+                <img src="images/complete.png" id="img3">
+            </div>
+            <h1 id="how">
+                구매 방법
+            </h1>
+            <div class="detail">
+                <p id="detail_1">아래의 이미지를 클릭하여 구매 사이트 접속</p>
+                <p id="detail_2">Pre-Order 페이지에서 원하는 에디션 선택</p>
+                <p id="detail_3">결제수단 선택하기 (결제 수단별 수수료 주의하기)</p>
+                <p id="detail_4">재밌고 낭만넘치는 타르코프 생활 즐기기</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
